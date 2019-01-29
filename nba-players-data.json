@@ -1,0 +1,17 @@
+{
+  "players": [
+    {
+      "name": 
+      "team": 
+      "games_played":
+      "points_per_game": 
+      "field_goal_percentage": 
+      "three_point_percentage": 
+      "free_throw_percentage":
+      "rebounds_per_game": 
+      "assist_per_game": 
+      "steals_per_game": 
+      "blocks_per_game": 
+    }
+  ]
+}
