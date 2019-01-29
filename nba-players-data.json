@@ -194,6 +194,45 @@
       "assist_per_game": 2.2,
       "steals_per_game": 0.57, 
       "blocks_per_game": 0.32
+    }, 
+    {
+      "name": "Kevin Love",
+      "team": "Cleveland Cavaliers", 
+      "games_played": 4, 
+      "points_per_game": 19.0, 
+      "field_goal_percentage": 32,
+      "three_point_percentage": 29, 
+      "free_throw_percentage": 82,
+      "rebounds_per_game": 13.5,
+      "assist_per_game": 3.5,
+      "steals_per_game": 0.25, 
+      "blocks_per_game": 0.25
+    }, 
+    {
+      "name": "Jordan Clarkson",
+      "team": "Cleveland Cavaliers", 
+      "games_played": 50, 
+      "points_per_game": 16.5, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 33, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 3.3,
+      "assist_per_game": 2.3,
+      "steals_per_game": 0.74, 
+      "blocks_per_game": 0.18
+    }, 
+    {
+      "name": "Collin Sexton",
+      "team": "Cleveland Cavaliers", 
+      "games_played": 51, 
+      "points_per_game": 14.4, 
+      "field_goal_percentage": 41,
+      "three_point_percentage": 40, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 3.0,
+      "assist_per_game": 2.8,
+      "steals_per_game": 0.51, 
+      "blocks_per_game": 0.06
     }
    
   ]
