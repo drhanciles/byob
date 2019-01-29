@@ -38,6 +38,45 @@
       "assist_per_game": 2.6,
       "steals_per_game": 1.7, 
       "blocks_per_game": 0.91
+    }, 
+    {
+      "name": "Kyrie Irving",
+      "team": "Boston Celtics", 
+      "games_played": 43, 
+      "points_per_game": 23.7, 
+      "field_goal_percentage": 49,
+      "three_point_percentage": 41, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 4.8,
+      "assist_per_game": 6.9,
+      "steals_per_game": 1.7, 
+      "blocks_per_game": 0.47
+    }, 
+    {
+      "name": "Jayson Tatum",
+      "team": "Boston Celtics", 
+      "games_played": 50, 
+      "points_per_game": 16.2, 
+      "field_goal_percentage": 44,
+      "three_point_percentage": 38, 
+      "free_throw_percentage": 86,
+      "rebounds_per_game": 6.2,
+      "assist_per_game": 1.8,
+      "steals_per_game": 1.0, 
+      "blocks_per_game": 0.78
+    }, 
+    {
+      "name": "Marcus Moris",
+      "team": "Boston Celtics", 
+      "games_played": 46, 
+      "points_per_game": 14.6, 
+      "field_goal_percentage": 47,
+      "three_point_percentage": 42, 
+      "free_throw_percentage": 87,
+      "rebounds_per_game": 6.1,
+      "assist_per_game": 1.4,
+      "steals_per_game": 0.61, 
+      "blocks_per_game": 0.35
     }
    
   ]
