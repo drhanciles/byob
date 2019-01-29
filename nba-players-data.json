@@ -389,6 +389,45 @@
       "assist_per_game": 2.0,
       "steals_per_game": 1.18, 
       "blocks_per_game": 0.64
+    }, 
+    {
+      "name": "James Harden",
+      "team": "Houston Rockets", 
+      "games_played": 46, 
+      "points_per_game": 36.3, 
+      "field_goal_percentage": 44,
+      "three_point_percentage": 36, 
+      "free_throw_percentage": 87,
+      "rebounds_per_game": 6.6,
+      "assist_per_game": 8.2,
+      "steals_per_game": 2.04, 
+      "blocks_per_game": 0.72
+    }, 
+    {
+      "name": "Clint Capela",
+      "team": "Houston Rockets", 
+      "games_played": 42, 
+      "points_per_game": 17.6, 
+      "field_goal_percentage": 63,
+      "three_point_percentage": 0, 
+      "free_throw_percentage": 63,
+      "rebounds_per_game": 12.6,
+      "assist_per_game": 1.5,
+      "steals_per_game": 0.60, 
+      "blocks_per_game": 1.83
+    }, 
+    {
+      "name": "Eric Gordon",
+      "team": "Houston Rockets", 
+      "games_played": 38, 
+      "points_per_game": 16.3, 
+      "field_goal_percentage": 38,
+      "three_point_percentage": 31, 
+      "free_throw_percentage": 80,
+      "rebounds_per_game": 2.7,
+      "assist_per_game": 2.1,
+      "steals_per_game": 0.58, 
+      "blocks_per_game": 0.39
     }
    
   ]
