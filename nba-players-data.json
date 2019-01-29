@@ -233,6 +233,45 @@
       "assist_per_game": 2.8,
       "steals_per_game": 0.51, 
       "blocks_per_game": 0.06
+    }, 
+    {
+      "name": "Luka Doncic",
+      "team": "Dallas Mavericks", 
+      "games_played": 48, 
+      "points_per_game": 20.5, 
+      "field_goal_percentage": 43,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 73,
+      "rebounds_per_game": 6.9,
+      "assist_per_game": 5.4,
+      "steals_per_game": 1.15, 
+      "blocks_per_game": 0.29
+    }, 
+    {
+      "name": "Harrison Barners",
+      "team": "Dallas Mavericks", 
+      "games_played": 45, 
+      "points_per_game": 17.6, 
+      "field_goal_percentage": 40,
+      "three_point_percentage": 39, 
+      "free_throw_percentage": 83,
+      "rebounds_per_game": 4.2,
+      "assist_per_game": 1.2,
+      "steals_per_game": 0.73, 
+      "blocks_per_game": 0.22
+    }, 
+    {
+      "name": "Wesley Matthews",
+      "team": "Dallas Mavericks", 
+      "games_played": 43, 
+      "points_per_game": 13.0, 
+      "field_goal_percentage": 41,
+      "three_point_percentage": 37, 
+      "free_throw_percentage": 79,
+      "rebounds_per_game": 2.3,
+      "assist_per_game": 2.3,
+      "steals_per_game": 0.77, 
+      "blocks_per_game": 0.28
     }
    
   ]
