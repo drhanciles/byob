@@ -116,6 +116,45 @@
       "assist_per_game": 5.0,
       "steals_per_game": 0.57, 
       "blocks_per_game": 0.22
+    }, 
+    {
+      "name": "Kemba Walker",
+      "team": "Charlotte Hornets", 
+      "games_played": 49, 
+      "points_per_game": 24.4, 
+      "field_goal_percentage": 43,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 82,
+      "rebounds_per_game": 4.3,
+      "assist_per_game": 5.6,
+      "steals_per_game": 1.22, 
+      "blocks_per_game": 0.53
+    }, 
+    {
+      "name": "Jeremy Lamb",
+      "team": "Charlotte Hornets", 
+      "games_played": 46, 
+      "points_per_game": 15.2, 
+      "field_goal_percentage": 44,
+      "three_point_percentage": 34, 
+      "free_throw_percentage": 86,
+      "rebounds_per_game": 5.6,
+      "assist_per_game": 2.0,
+      "steals_per_game": 0.96, 
+      "blocks_per_game": 0.28
+    }, 
+    {
+      "name": "Marvin Williams",
+      "team": "Charlotte Hornets", 
+      "games_played": 48, 
+      "points_per_game": 10.1, 
+      "field_goal_percentage": 41,
+      "three_point_percentage": 37, 
+      "free_throw_percentage": 72,
+      "rebounds_per_game": 5.6,
+      "assist_per_game": 1.3,
+      "steals_per_game": 0.90, 
+      "blocks_per_game": 0.73
     }
    
   ]
