@@ -1,17 +1,44 @@
 {
   "players": [
+     {
+      "name": "John Collins",
+      "team": "Atlanta Hawks", 
+      "games_played": 33, 
+      "points_per_game": 19.5, 
+      "field_goal_percentage": 59,
+      "three_point_percentage": 40, 
+      "free_throw_percentage": 73,
+      "rebounds_per_game": 10.0,
+      "assist_per_game": 2.3,
+      "steals_per_game": 0.30, 
+      "blocks_per_game": 0.33
+    }, 
     {
-      "name": 
-      "team": 
-      "games_played":
-      "points_per_game": 
-      "field_goal_percentage": 
-      "three_point_percentage": 
-      "free_throw_percentage":
-      "rebounds_per_game": 
-      "assist_per_game": 
-      "steals_per_game": 
-      "blocks_per_game": 
+      "name": "Trae Young",
+      "team": "Atlanta Hawks", 
+      "games_played": 49, 
+      "points_per_game": 16.4, 
+      "field_goal_percentage": 40,
+      "three_point_percentage": 29, 
+      "free_throw_percentage": 81,
+      "rebounds_per_game": 3.2,
+      "assist_per_game": 7.3,
+      "steals_per_game": 0.88, 
+      "blocks_per_game": 0.24
+    }, 
+    {
+      "name": "Kent Bazemore",
+      "team": "Atlanta Hawks", 
+      "games_played": 35, 
+      "points_per_game": 14.0, 
+      "field_goal_percentage": 44,
+      "three_point_percentage": 33, 
+      "free_throw_percentage": 75,
+      "rebounds_per_game": 4.0,
+      "assist_per_game": 2.6,
+      "steals_per_game": 1.7, 
+      "blocks_per_game": 0.91
     }
+   
   ]
 }
