@@ -272,6 +272,45 @@
       "assist_per_game": 2.3,
       "steals_per_game": 0.77, 
       "blocks_per_game": 0.28
+    }, 
+    {
+      "name": "Nikola Jokic",
+      "team": "Denver Nuggets", 
+      "games_played": 48, 
+      "points_per_game": 20.1, 
+      "field_goal_percentage": 50,
+      "three_point_percentage": 31, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 10.3,
+      "assist_per_game": 7.6,
+      "steals_per_game": 1.40, 
+      "blocks_per_game": 0.69
+    }, 
+    {
+      "name": "Jamal Murray",
+      "team": "Denver Nuggets", 
+      "games_played": 47, 
+      "points_per_game": 18.5, 
+      "field_goal_percentage": 43,
+      "three_point_percentage": 36, 
+      "free_throw_percentage": 84,
+      "rebounds_per_game": 4.4,
+      "assist_per_game": 4.9,
+      "steals_per_game": 0.79, 
+      "blocks_per_game": 0.38
+    }, 
+    {
+      "name": "Gary Harris",
+      "team": "Denver Nuggets", 
+      "games_played": 31, 
+      "points_per_game": 15.0, 
+      "field_goal_percentage": 43,
+      "three_point_percentage": 32, 
+      "free_throw_percentage": 82,
+      "rebounds_per_game": 3.1,
+      "assist_per_game": 2.7,
+      "steals_per_game": 0.90, 
+      "blocks_per_game": 0.42
     }
    
   ]
