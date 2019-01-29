@@ -311,6 +311,45 @@
       "assist_per_game": 2.7,
       "steals_per_game": 0.90, 
       "blocks_per_game": 0.42
+    }, 
+    {
+      "name": "Blake Griffin",
+      "team": "Detroit Pistons", 
+      "games_played": 46, 
+      "points_per_game": 26.5, 
+      "field_goal_percentage": 48,
+      "three_point_percentage": 36, 
+      "free_throw_percentage": 76,
+      "rebounds_per_game": 8.1,
+      "assist_per_game": 5.2,
+      "steals_per_game": 0.83, 
+      "blocks_per_game": 0.46
+    }, 
+    {
+      "name": "Andre Drummond",
+      "team": "Detroit Pistons", 
+      "games_played": 45, 
+      "points_per_game": 16.5, 
+      "field_goal_percentage": 49,
+      "three_point_percentage": 13, 
+      "free_throw_percentage": 53,
+      "rebounds_per_game": 15.0,
+      "assist_per_game": 1.2,
+      "steals_per_game": 1.58, 
+      "blocks_per_game": 1.64
+    }, 
+    {
+      "name": "Reggie Jackson",
+      "team": "Detroit Pistons", 
+      "games_played": 48, 
+      "points_per_game": 14.1, 
+      "field_goal_percentage": 39,
+      "three_point_percentage": 34, 
+      "free_throw_percentage": 86,
+      "rebounds_per_game": 2.8,
+      "assist_per_game": 4.2,
+      "steals_per_game": 0.67, 
+      "blocks_per_game": 0.13
     }
    
   ]
