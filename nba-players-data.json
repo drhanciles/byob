@@ -584,6 +584,45 @@
       "assist_per_game": 1.1,
       "steals_per_game": 0.92, 
       "blocks_per_game": 1.49
+    }, 
+    {
+      "name": "Josh Richardson",
+      "team": "Miami Heat", 
+      "games_played": 51, 
+      "points_per_game": 17.5, 
+      "field_goal_percentage": 40,
+      "three_point_percentage": 37, 
+      "free_throw_percentage": 86,
+      "rebounds_per_game": 3.7,
+      "assist_per_game": 3.9,
+      "steals_per_game": 1.13, 
+      "blocks_per_game": 0.48
+    },
+    {
+      "name": "Goran Dragic",
+      "team": "Miami Heat", 
+      "games_played": 14, 
+      "points_per_game": 15.3, 
+      "field_goal_percentage": 41,
+      "three_point_percentage": 31, 
+      "free_throw_percentage": 76,
+      "rebounds_per_game": 3.1,
+      "assist_per_game": 4.9,
+      "steals_per_game": 0.71, 
+      "blocks_per_game": 0.29
+    }, 
+    {
+      "name": "Dwyane Wade",
+      "team": "Miami Heat", 
+      "games_played": 39, 
+      "points_per_game": 13.8, 
+      "field_goal_percentage": 42,
+      "three_point_percentage": 32, 
+      "free_throw_percentage": 70,
+      "rebounds_per_game": 3.7,
+      "assist_per_game": 4.3,
+      "steals_per_game": 0.62, 
+      "blocks_per_game": 0.46
     }
     
    
