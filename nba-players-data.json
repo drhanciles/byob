@@ -740,6 +740,45 @@
       "assist_per_game": 3.0,
       "steals_per_game": 0.60, 
       "blocks_per_game": 0.60
+    }, 
+    {
+      "name": "Tim Hardaway Jr.",
+      "team": "New York Knicks", 
+      "games_played": 45, 
+      "points_per_game": 19.4, 
+      "field_goal_percentage": 39,
+      "three_point_percentage": 34, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 3.5,
+      "assist_per_game": 2.6,
+      "steals_per_game": 0.91, 
+      "blocks_per_game": 0.13
+    }, 
+    {
+      "name": "Emmanuel Mudiay",
+      "team": "New York Knicks", 
+      "games_played": 39, 
+      "points_per_game": 14.7, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 30, 
+      "free_throw_percentage": 76,
+      "rebounds_per_game": 3.1,
+      "assist_per_game": 3.9,
+      "steals_per_game": 0.79, 
+      "blocks_per_game": 0.33
+    }, 
+    {
+      "name": "Enes Kanter",
+      "team": "New York Knicks", 
+      "games_played": 42, 
+      "points_per_game": 14.4, 
+      "field_goal_percentage": 54,
+      "three_point_percentage": 33, 
+      "free_throw_percentage": 82,
+      "rebounds_per_game": 10.8,
+      "assist_per_game": 2.0,
+      "steals_per_game": 0.43, 
+      "blocks_per_game": 0.40
     }
     
    
