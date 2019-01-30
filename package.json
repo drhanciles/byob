@@ -2,7 +2,7 @@
   "name": "byob",
   "version": "1.0.0",
   "description": "",
-  "main": "duke-server.js",
+  "main": "server.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha --exit"
   },
