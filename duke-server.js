@@ -13,7 +13,7 @@ app.get('/', (request, response) => {
   response.status(200).send('Hello World!');
 });
 
-app.listen(app.get(port), () => {
+app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on port ${app.get('port')}`)
 });
 
