@@ -467,6 +467,45 @@
       "assist_per_game": 2.8,
       "steals_per_game": 0.64, 
       "blocks_per_game": 0.47
+    }, 
+    {
+      "name": "Tobias Harris",
+      "team": "Los Angeles Clippers", 
+      "games_played": 51, 
+      "points_per_game": 21.2, 
+      "field_goal_percentage": 50,
+      "three_point_percentage": 43, 
+      "free_throw_percentage": 88,
+      "rebounds_per_game": 7.9,
+      "assist_per_game": 2.6,
+      "steals_per_game": 0.76, 
+      "blocks_per_game": 0.45
+    }, 
+    {
+      "name": "Danilo Gallinari",
+      "team": "Los Angeles Clippers", 
+      "games_played": 44, 
+      "points_per_game": 19.0, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 45, 
+      "free_throw_percentage": 91,
+      "rebounds_per_game": 6.0,
+      "assist_per_game": 2.5,
+      "steals_per_game": 0.73, 
+      "blocks_per_game": 0.27
+    }, 
+    {
+      "name": "Lou Williams",
+      "team": "Los Angeles Clippers", 
+      "games_played": 45, 
+      "points_per_game": 18.7, 
+      "field_goal_percentage": 41,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 90,
+      "rebounds_per_game": 3.0,
+      "assist_per_game": 5.2,
+      "steals_per_game": 0.64, 
+      "blocks_per_game": 0.13
     }
     
    
