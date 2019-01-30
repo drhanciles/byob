@@ -1,7 +1,7 @@
 const chai = require('chai');
 const should = chai.should();
 const chaiHttp = require('chai-http');
-const server = require('../duke-server');
+const server = require('../server');
 
 chai.use(chaiHttp);
 
@@ -29,7 +29,7 @@ describe('Client Routes', () => {
   describe('API Routes', () => {
     describe('GET', () => {
       it('should return an array of teams from the GET "/api/v1/teams" endpoint', (done) => {
-        
+
       });
 
       it('should return a single team object from the get "/api/v1/teams/:id" endpoint', (done) => {
