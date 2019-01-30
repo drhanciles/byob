@@ -623,6 +623,45 @@
       "assist_per_game": 4.3,
       "steals_per_game": 0.62, 
       "blocks_per_game": 0.46
+    }, 
+    {
+      "name": "Giannis Antetokounmpo",
+      "team": "Milwaukee Bucks", 
+      "games_played": 45, 
+      "points_per_game": 26.6, 
+      "field_goal_percentage": 57,
+      "three_point_percentage": 20, 
+      "free_throw_percentage": 70,
+      "rebounds_per_game": 12.7,
+      "assist_per_game": 5.8,
+      "steals_per_game": 1.38, 
+      "blocks_per_game": 1.42
+    }, 
+    {
+      "name": "Khris Middleton",
+      "team": "Milwaukee Bucks", 
+      "games_played": 46, 
+      "points_per_game": 17.4, 
+      "field_goal_percentage": 43,
+      "three_point_percentage": 37, 
+      "free_throw_percentage": 84,
+      "rebounds_per_game": 5.7,
+      "assist_per_game": 4.1,
+      "steals_per_game": 1.11, 
+      "blocks_per_game": 0.09
+    }, 
+    {
+      "name": "Malcolm Brogdon",
+      "team": "Milwaukee Bucks", 
+      "games_played": 45, 
+      "points_per_game": 15.8, 
+      "field_goal_percentage": 51,
+      "three_point_percentage": 41, 
+      "free_throw_percentage": 95,
+      "rebounds_per_game": 4.6,
+      "assist_per_game": 3.3,
+      "steals_per_game": 0.73, 
+      "blocks_per_game": 0.24
     }
     
    
