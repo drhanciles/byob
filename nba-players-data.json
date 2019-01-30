@@ -1091,6 +1091,45 @@
       "assist_per_game": 2.9,
       "steals_per_game": 0.96, 
       "blocks_per_game": 0.67
+    }, 
+    {
+      "name": "Donovan Mitchell",
+      "team": "Utah Jazz", 
+      "games_played": 47, 
+      "points_per_game": 22.5, 
+      "field_goal_percentage": 42,
+      "three_point_percentage": 33, 
+      "free_throw_percentage": 79,
+      "rebounds_per_game": 3.8,
+      "assist_per_game": 4.0,
+      "steals_per_game": 1.57, 
+      "blocks_per_game": 0.38
+    }, 
+    {
+      "name": "Rudy Gobert",
+      "team": "Utah Jazz", 
+      "games_played": 51, 
+      "points_per_game": 15.0, 
+      "field_goal_percentage": 64,
+      "three_point_percentage": 0, 
+      "free_throw_percentage": 65,
+      "rebounds_per_game": 12.9,
+      "assist_per_game": 2.2,
+      "steals_per_game": 0.94, 
+      "blocks_per_game": 2.16
+    }, 
+    {
+      "name": "Ricky Rubio",
+      "team": "Utah Jazz", 
+      "games_played": 44, 
+      "points_per_game": 12.8, 
+      "field_goal_percentage": 41,
+      "three_point_percentage": 32, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 3.5,
+      "assist_per_game": 6.0,
+      "steals_per_game": 1.30, 
+      "blocks_per_game": 0.20
     }
 
     
