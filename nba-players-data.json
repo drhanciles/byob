@@ -896,6 +896,45 @@
       "assist_per_game": 2.8,
       "steals_per_game": 0.40, 
       "blocks_per_game": 0.21
+    }, 
+    {
+      "name": "Devin Booker",
+      "team": "Phoenix Suns", 
+      "games_played": 39, 
+      "points_per_game": 24.5, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 31, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 3.6,
+      "assist_per_game": 6.7,
+      "steals_per_game": 0.90, 
+      "blocks_per_game": 0.18
+    }, 
+    {
+      "name": "TJ Warren",
+      "team": "Phoenix Suns", 
+      "games_played": 43, 
+      "points_per_game": 18.0, 
+      "field_goal_percentage": 48,
+      "three_point_percentage": 43, 
+      "free_throw_percentage": 81,
+      "rebounds_per_game": 4.0,
+      "assist_per_game": 1.5,
+      "steals_per_game": 1.19, 
+      "blocks_per_game": 0.67
+    }, 
+    {
+      "name": "Deandre Ayton",
+      "team": "Phoenix Suns", 
+      "games_played": 47, 
+      "points_per_game": 16.4, 
+      "field_goal_percentage": 59,
+      "three_point_percentage": 0, 
+      "free_throw_percentage": 77,
+      "rebounds_per_game": 10.6,
+      "assist_per_game": 2.0,
+      "steals_per_game": 0.79, 
+      "blocks_per_game": 0.98
     }
     
    
