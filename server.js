@@ -4,6 +4,10 @@ const bodyParser = require('body-parser');
 const teamData = require('./db/data/mock-team-data');
 const allTeamData = require('./db/data/nba-team-data');
 const allPlayerData = require('./db/data/nba-players-data');
+const environment = process.env.NODE_ENV || 'development'; 
+const configuration = require('./knexfile.js')[environment];
+const database = require('knex')(configuration);
+
 
 app.use(bodyParser.json());
 
@@ -16,21 +20,29 @@ app.get('/', (request, response) => {
 });
 
 app.get('/api/v1/teams', (request, response) => {
-  response.status(200).json(app.locals.teamData);
+  database('teams').select()
+    .then(teams => {
+      response.status(200).json(teams);
+    })
+    .catch(error => {
+      response.status(500).json({ error })
+    }); 
 });
 
 app.get('/api/v1/teams/:id', (request, response) => {
   const id = parseInt(request.params.id);
-  const foundTeam = app.locals.teamData.find((team) => {
-    return team.id === id;
-  });
-
-  if(foundTeam) {
-    response.status(200).json(foundTeam);
-  } else {
-    response.status(404).json({error: 'There are no entries with that id'});
-  }
-
+  database('teams').where('id', id).select()
+    .then(team => {
+      console.log(team)
+      if(team.length > 0) {
+        response.status(200).json(team);
+      } else {
+        response.status(404).json({error: 'There are no entries with that id'});
+      }
+    })
+    .catch(error => {
+      response.status(500).json({ error });
+    }); 
 });
 
 app.listen(app.get('port'), () => {
