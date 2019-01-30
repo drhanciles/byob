@@ -5,8 +5,6 @@ const teamData = require('./db/data/mock-team-data');
 const allTeamData = require('./db/data/nba-team-data');
 const allPlayerData = require('./db/data/nba-players-data');
 
-console.log(teamData);
-
 app.use(bodyParser.json());
 
 app.set('port', process.env.PORT || 3000);
