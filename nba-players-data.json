@@ -428,7 +428,47 @@
       "assist_per_game": 2.1,
       "steals_per_game": 0.58, 
       "blocks_per_game": 0.39
+    }, 
+    {
+      "name": "Victor Oladipo",
+      "team": "Indiana Pacers", 
+      "games_played": 36, 
+      "points_per_game": 18.8, 
+      "field_goal_percentage": 42,
+      "three_point_percentage": 34, 
+      "free_throw_percentage": 73,
+      "rebounds_per_game": 5.6,
+      "assist_per_game": 5.2,
+      "steals_per_game": 1.67, 
+      "blocks_per_game": 0.31
+    },
+    {
+      "name": "Bojan Bogdanovic",
+      "team": "Indiana Pacers", 
+      "games_played": 49, 
+      "points_per_game": 16.0, 
+      "field_goal_percentage": 48,
+      "three_point_percentage": 43, 
+      "free_throw_percentage": 83,
+      "rebounds_per_game": 4.1,
+      "assist_per_game": 1.7,
+      "steals_per_game": 0.84, 
+      "blocks_per_game": 0
+    }, 
+    {
+      "name": "Domantas Sabonis",
+      "team": "Indiana Pacers", 
+      "games_played": 47, 
+      "points_per_game": 14.7, 
+      "field_goal_percentage": 61,
+      "three_point_percentage": 78, 
+      "free_throw_percentage": 75,
+      "rebounds_per_game": 9.4,
+      "assist_per_game": 2.8,
+      "steals_per_game": 0.64, 
+      "blocks_per_game": 0.47
     }
+    
    
   ]
 }
