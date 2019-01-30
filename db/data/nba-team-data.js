@@ -71,7 +71,7 @@ module.exports = [
       most_recent_championship: null,
       defensive_rating: 104.8,
       points_per_game: 108.7 },
-    { team_name: 'LA Clippers',
+    { team_name: 'Los Angeles Clippers',
       head_coach: 'Doc Rivers',
       owner: 'Steve Ballmer',
       most_recent_championship: null,
