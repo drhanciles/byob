@@ -818,6 +818,45 @@
       "assist_per_game": 1.8,
       "steals_per_game": 1.48, 
       "blocks_per_game": 0.77
+    }, 
+    {
+      "name": "Nikola Vucevic",
+      "team": "Orlando Magic", 
+      "games_played": 49, 
+      "points_per_game": 20.6, 
+      "field_goal_percentage": 51,
+      "three_point_percentage": 37, 
+      "free_throw_percentage": 77,
+      "rebounds_per_game": 12.0,
+      "assist_per_game": 3.8,
+      "steals_per_game": 0.98, 
+      "blocks_per_game": 1.14
+    }, 
+    {
+      "name": "Aaron Gordon",
+      "team": "Orlando Magic", 
+      "games_played": 46, 
+      "points_per_game": 15.9, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 72,
+      "rebounds_per_game": 7.7,
+      "assist_per_game": 3.4,
+      "steals_per_game": 0.74, 
+      "blocks_per_game": 0.67
+    }, 
+    {
+      "name": "Evan Fournier",
+      "team": "Orlando Magic", 
+      "games_played": 49, 
+      "points_per_game": 14.8, 
+      "field_goal_percentage": 42,
+      "three_point_percentage": 32, 
+      "free_throw_percentage": 78,
+      "rebounds_per_game": 3.0,
+      "assist_per_game": 3.5,
+      "steals_per_game": 0.88, 
+      "blocks_per_game": 0.16
     }
     
    
