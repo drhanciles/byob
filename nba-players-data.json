@@ -779,6 +779,45 @@
       "assist_per_game": 2.0,
       "steals_per_game": 0.43, 
       "blocks_per_game": 0.40
+    }, 
+    {
+      "name": "Paul George",
+      "team": "Oklahoma City Thunder", 
+      "games_played": 48, 
+      "points_per_game": 27.1, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 40, 
+      "free_throw_percentage": 83,
+      "rebounds_per_game": 8.1,
+      "assist_per_game": 4.0,
+      "steals_per_game": 2.31, 
+      "blocks_per_game": 0.50
+    },
+    {
+      "name": "Russell Westbrook",
+      "team": "Oklahoma City Thunder", 
+      "games_played": 41, 
+      "points_per_game": 21.6, 
+      "field_goal_percentage": 41,
+      "three_point_percentage": 24, 
+      "free_throw_percentage": 65,
+      "rebounds_per_game": 10.8,
+      "assist_per_game": 10.7,
+      "steals_per_game": 2.34, 
+      "blocks_per_game": 0.32
+    }, 
+    {
+      "name": "Steven Adams",
+      "team": "Oklahoma City Thunder", 
+      "games_played": 48, 
+      "points_per_game": 15.4, 
+      "field_goal_percentage": 61,
+      "three_point_percentage": 0, 
+      "free_throw_percentage": 56,
+      "rebounds_per_game": 10.0,
+      "assist_per_game": 1.8,
+      "steals_per_game": 1.48, 
+      "blocks_per_game": 0.77
     }
     
    
