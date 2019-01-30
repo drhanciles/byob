@@ -701,6 +701,45 @@
       "assist_per_game": 2.3,
       "steals_per_game": 1.09, 
       "blocks_per_game": 0.52
+    },
+    {
+      "name": "Anthony Davis",
+      "team": "New Orleans Pelicans", 
+      "games_played": 41, 
+      "points_per_game": 29.3, 
+      "field_goal_percentage": 50,
+      "three_point_percentage": 32, 
+      "free_throw_percentage": 81,
+      "rebounds_per_game": 13.3,
+      "assist_per_game": 4.4,
+      "steals_per_game": 1.71, 
+      "blocks_per_game": 2.56
+    }, 
+    {
+      "name": "Jrue Holiday",
+      "team": "New Orleans Pelicans", 
+      "games_played": 50, 
+      "points_per_game": 21.2, 
+      "field_goal_percentage": 48,
+      "three_point_percentage": 33, 
+      "free_throw_percentage": 75,
+      "rebounds_per_game": 4.9,
+      "assist_per_game": 8.1,
+      "steals_per_game": 1.66, 
+      "blocks_per_game": 0.76
+    }, 
+    {
+      "name": "Julius Randle",
+      "team": "New Orleans Pelicans", 
+      "games_played": 47, 
+      "points_per_game": 19.9, 
+      "field_goal_percentage": 54,
+      "three_point_percentage": 31, 
+      "free_throw_percentage": 74,
+      "rebounds_per_game": 9.3,
+      "assist_per_game": 3.0,
+      "steals_per_game": 0.60, 
+      "blocks_per_game": 0.60
     }
     
    
