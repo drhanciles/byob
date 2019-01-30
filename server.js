@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const teamData = require('./test/mock-team-data');
+const teamData = require('./db/data/mock-team-data');
 
 app.use(bodyParser.json());
 
