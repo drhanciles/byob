@@ -935,6 +935,45 @@
       "assist_per_game": 2.0,
       "steals_per_game": 0.79, 
       "blocks_per_game": 0.98
+    }, 
+    {
+      "name": "Damian Lillard",
+      "team": "Portland Trail Blazers", 
+      "games_played": 50, 
+      "points_per_game": 26.2, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 37, 
+      "free_throw_percentage": 91,
+      "rebounds_per_game": 4.5,
+      "assist_per_game": 6.2,
+      "steals_per_game": 1.06, 
+      "blocks_per_game": 0.50
+    }, 
+    {
+      "name": "CJ McCollum",
+      "team": "Portland Trail Blazers", 
+      "games_played": 50, 
+      "points_per_game": 20.8, 
+      "field_goal_percentage": 46,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 83,
+      "rebounds_per_game": 3.9,
+      "assist_per_game": 2.8,
+      "steals_per_game": 0.80, 
+      "blocks_per_game": 0.34
+    }, 
+    {
+      "name": "Jusuf Nurkic",
+      "team": "Portland Trail Blazers", 
+      "games_played": 51, 
+      "points_per_game": 15.2, 
+      "field_goal_percentage": 50,
+      "three_point_percentage": 12, 
+      "free_throw_percentage": 75,
+      "rebounds_per_game": 10.4,
+      "assist_per_game": 3.2,
+      "steals_per_game": 1.08, 
+      "blocks_per_game": 1.57
     }
     
    
