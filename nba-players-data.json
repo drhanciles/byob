@@ -1130,9 +1130,45 @@
       "assist_per_game": 6.0,
       "steals_per_game": 1.30, 
       "blocks_per_game": 0.20
+    }, 
+    {
+      "name": "Bradley Beal",
+      "team": "Washington Wizard", 
+      "games_played": 49, 
+      "points_per_game": 24.6, 
+      "field_goal_percentage": 47,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 79,
+      "rebounds_per_game": 5.1,
+      "assist_per_game": 5.0,
+      "steals_per_game": 1.41, 
+      "blocks_per_game": 0.82
+    }, 
+    {
+      "name": "John Wall",
+      "team": "Washington Wizard", 
+      "games_played": 32, 
+      "points_per_game": 20.7, 
+      "field_goal_percentage": 44,
+      "three_point_percentage": 30, 
+      "free_throw_percentage": 70,
+      "rebounds_per_game": 3.6,
+      "assist_per_game": 8.7,
+      "steals_per_game": 1.53, 
+      "blocks_per_game": 0.91
+    }, 
+    {
+      "name": "Trevor Ariza",
+      "team": "Washington Wizard", 
+      "games_played": 19, 
+      "points_per_game": 15.2, 
+      "field_goal_percentage": 37,
+      "three_point_percentage": 31, 
+      "free_throw_percentage": 81,
+      "rebounds_per_game": 6.0,
+      "assist_per_game": 4.3,
+      "steals_per_game": 1.63, 
+      "blocks_per_game": 0.16
     }
-
-    
-   
   ]
 }
