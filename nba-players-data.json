@@ -857,6 +857,45 @@
       "assist_per_game": 3.5,
       "steals_per_game": 0.88, 
       "blocks_per_game": 0.16
+    }, 
+    {
+      "name": "Joel Embiid",
+      "team": "Philadelphia Sixers", 
+      "games_played": 46, 
+      "points_per_game": 27.2, 
+      "field_goal_percentage": 49,
+      "three_point_percentage": 31, 
+      "free_throw_percentage": 80,
+      "rebounds_per_game": 13.3,
+      "assist_per_game": 3.5,
+      "steals_per_game": 0.57, 
+      "blocks_per_game": 1.96
+    }, 
+    {
+      "name": "Jimmy Buter",
+      "team": "Philadelphia Sixers", 
+      "games_played": 28, 
+      "points_per_game": 19.0, 
+      "field_goal_percentage": 47,
+      "three_point_percentage": 38, 
+      "free_throw_percentage": 87,
+      "rebounds_per_game": 4.8,
+      "assist_per_game": 3.5,
+      "steals_per_game": 1.90, 
+      "blocks_per_game": 0.50
+    }, 
+    {
+      "name": "JJ Redick",
+      "team": "Philadelphia Sixers", 
+      "games_played": 48, 
+      "points_per_game": 18.5, 
+      "field_goal_percentage": 45,
+      "three_point_percentage": 38, 
+      "free_throw_percentage": 90,
+      "rebounds_per_game": 2.2,
+      "assist_per_game": 2.8,
+      "steals_per_game": 0.40, 
+      "blocks_per_game": 0.21
     }
     
    
