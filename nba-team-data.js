@@ -1,4 +1,4 @@
-{
+module.exports = {
   "teams": [
     {
       "team_name": "Milwaukee Bucks",
