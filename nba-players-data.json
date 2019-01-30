@@ -545,6 +545,45 @@
       "assist_per_game": 2.9,
       "steals_per_game": 0.64, 
       "blocks_per_game": 0.64
+    }, 
+    {
+      "name": "Mike Conley",
+      "team": "Memphis Grizzlies", 
+      "games_played": 50, 
+      "points_per_game": 20.1, 
+      "field_goal_percentage": 43,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 84,
+      "rebounds_per_game": 3.3,
+      "assist_per_game": 6.3,
+      "steals_per_game": 1.36, 
+      "blocks_per_game": 0.34
+    }, 
+    {
+      "name": "Marc Gasol",
+      "team": "Memphis Grizzlies", 
+      "games_played": 50, 
+      "points_per_game": 15.7, 
+      "field_goal_percentage": 44,
+      "three_point_percentage": 35, 
+      "free_throw_percentage": 76,
+      "rebounds_per_game": 8.7,
+      "assist_per_game": 4.7,
+      "steals_per_game": 1.18, 
+      "blocks_per_game": 1.26
+    }, 
+    {
+      "name": "Jaren Jackson Jr.",
+      "team": "Memphis Grizzlies", 
+      "games_played": 51, 
+      "points_per_game": 13.5, 
+      "field_goal_percentage": 51,
+      "three_point_percentage": 32, 
+      "free_throw_percentage": 78,
+      "rebounds_per_game": 4.6,
+      "assist_per_game": 1.1,
+      "steals_per_game": 0.92, 
+      "blocks_per_game": 1.49
     }
     
    
