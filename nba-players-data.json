@@ -1052,6 +1052,45 @@
       "assist_per_game": 2.5,
       "steals_per_game": 0.88, 
       "blocks_per_game": 0.61
+    }, 
+    {
+      "name": "Kawhi Leonard",
+      "team": "Toronto Raptors", 
+      "games_played": 38, 
+      "points_per_game": 27.9, 
+      "field_goal_percentage": 50,
+      "three_point_percentage": 37, 
+      "free_throw_percentage": 86,
+      "rebounds_per_game": 7.9,
+      "assist_per_game": 3.2,
+      "steals_per_game": 1.89, 
+      "blocks_per_game": 0.50
+    }, 
+    {
+      "name": "Serge Ibaka",
+      "team": "Toronto Raptors", 
+      "games_played": 48, 
+      "points_per_game": 16.1, 
+      "field_goal_percentage": 52,
+      "three_point_percentage": 27, 
+      "free_throw_percentage": 78,
+      "rebounds_per_game": 7.6,
+      "assist_per_game": 1.4,
+      "steals_per_game": 0.48, 
+      "blocks_per_game": 1.33
+    }, 
+    {
+      "name": "Pascal Siakam",
+      "team": "Toronto Raptors", 
+      "games_played": 51, 
+      "points_per_game": 15.2, 
+      "field_goal_percentage": 56,
+      "three_point_percentage": 32, 
+      "free_throw_percentage": 80,
+      "rebounds_per_game": 7.0,
+      "assist_per_game": 2.9,
+      "steals_per_game": 0.96, 
+      "blocks_per_game": 0.67
     }
 
     
