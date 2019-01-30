@@ -662,6 +662,45 @@
       "assist_per_game": 3.3,
       "steals_per_game": 0.73, 
       "blocks_per_game": 0.24
+    },
+    {
+      "name": "Karl-Anthony Towns",
+      "team": "Minnesota Timberwolves", 
+      "games_played": 50, 
+      "points_per_game": 22.8, 
+      "field_goal_percentage": 50,
+      "three_point_percentage": 38, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 12.2,
+      "assist_per_game": 3.1,
+      "steals_per_game": 0.96, 
+      "blocks_per_game": 1.90
+    }, 
+    {
+      "name": "Derrick Rose",
+      "team": "Minnesota Timberwolves", 
+      "games_played": 38, 
+      "points_per_game": 18.6, 
+      "field_goal_percentage": 48,
+      "three_point_percentage": 41, 
+      "free_throw_percentage": 85,
+      "rebounds_per_game": 2.8,
+      "assist_per_game": 4.7,
+      "steals_per_game": 0.63, 
+      "blocks_per_game": 0.26
+    }, 
+    {
+      "name": "Andrew Wiggins",
+      "team": "Minnesota Timberwolves", 
+      "games_played": 46, 
+      "points_per_game": 18.1, 
+      "field_goal_percentage": 40,
+      "three_point_percentage": 34, 
+      "free_throw_percentage": 72,
+      "rebounds_per_game": 4.6,
+      "assist_per_game": 2.3,
+      "steals_per_game": 1.09, 
+      "blocks_per_game": 0.52
     }
     
    
