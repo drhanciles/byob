@@ -269,7 +269,21 @@ describe('Client Routes', () => {
         })
     })
   })
-  // describe('PATCH', () => {
-
-  // })
+  describe('PATCH', () => {
+    it('should update the the given property on a player mathing the params in a PATCH request sent to "/api/v1/players/:id"', (done) => {
+      chai.request(server)
+      .patch('api/v1/players/2')
+      .send({
+        games_played: 53, 
+        three_point_percentage: 35
+      })
+      .end((error, response) => {
+        response.should.have.status(200); 
+        response.should.be.html; 
+        response.should.be.a('string')
+        reesonse.res.text.should.equal('Player at id 2 has been updated')
+        done(); 
+      })
+    })
+  })
 }); 
