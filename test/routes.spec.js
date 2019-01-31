@@ -144,6 +144,13 @@ describe('Client Routes', () => {
             done(); 
           })
       }); 
+
+      it('should get a player or players based on a query', (done) => {
+        chai.request(server)
+          .get('/api/v1/players')
+          .query({})
+      })
+
       it('should GET a player by a specific id when a request is made too "/api/v1/players/:id"', (done) => {
         chai.request(server)
           .get('/api/v1/players/2')

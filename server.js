@@ -44,6 +44,8 @@ app.get('/api/v1/teams/:id', (request, response) => {
 });
 
 app.get('/api/v1/players', (request, response) => {
+  console.log(request.query);
+  
   database('players').select()
   .then(players => {
     response.status(200).json(players);
@@ -68,10 +70,13 @@ app.get('/api/v1/players/:id', (request, response) => {
     });
 })
 
-app.get('/api/v1/players?:key=:value', (request, response) => {
-  database('players').where(request.params.key, request.params.value).select()
-    .then(() => {})
-})
+// app.get('/api/v1/players?:key=:value', (request, response) => {
+//   console.log(request.params.key, request.params.value)
+//   database('players').where(request.params.key, request.params.value).select()
+//     .then((players) => {
+//       response.status(200).json({ players })
+//     })
+// })
 
 app.delete('/api/v1/teams/:id', (request, response) => {
   const id = parseInt(request.params.id)
