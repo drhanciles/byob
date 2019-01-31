@@ -150,7 +150,11 @@ describe('Client Routes', () => {
       it('should get a player or players based on a query', (done) => {
         chai.request(server)
           .get('/api/v1/players')
-          .query({})
+          .query({ rebounds_per_game: 10 })
+          .end((error, response) => {
+            response.should.have.status(200);
+            done();
+          })
       })
 
       it('should GET a player by a specific id when a request is made too "/api/v1/players/:id"', (done) => {
