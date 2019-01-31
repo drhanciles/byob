@@ -220,7 +220,7 @@ describe('Client Routes', () => {
         .post('/api/')
     }); 
 
-    it.skip('should add a new player when a request is sent to POST "/api/v1/players"', (done) => {
+    it('should add a new player when a request is sent to POST "/api/v1/players"', (done) => {
       chai.request(server)
         .post('/api/v1/players')
         .send({
@@ -238,7 +238,7 @@ describe('Client Routes', () => {
         })
         .end((err, response) => {
           response.should.have.status(201); 
-          response.body.should.be.json;
+          response.should.be.json;
           response.body.should.have.property('id'); 
           response.body.id.should.be.a('number'); 
           done();
