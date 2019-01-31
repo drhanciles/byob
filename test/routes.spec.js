@@ -243,7 +243,8 @@ describe('Client Routes', () => {
           response.body.id.should.be.a('number'); 
           done();
         })
-    })
+    });
+
     it('should not add a player if missing data is sent to "/api/v1/players",', (done) => {
       chai.request(server)
         .post('/api/v1/players')
@@ -268,4 +269,7 @@ describe('Client Routes', () => {
         })
     })
   })
+  // describe('PATCH', () => {
+
+  // })
 }); 

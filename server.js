@@ -120,7 +120,22 @@ app.post('/api/v1/players', (request, response) => {
   database('players').insert(body, 'id')
     .then(body => response.status(201).json({ id: body[0] }))
     .catch(error => response.status(500).json({ error }))
-})
+}); 
+
+app.patch('/api/v1/players/:id', (request, response) => {
+  const id = parseInt(request.params.id); 
+  const { body } = request; 
+
+  database('players').where('id', id).update(body)
+    .then(playerId => {
+      if (playerId) {
+        response.status(200).send(`Player at id ${playerId} has been updated`)
+      } else {
+        response.status(404).send('There is no player at that id')
+      }
+    })
+    .catch(error => response.status(500).json({ error }))
+}); 
 
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on port ${app.get('port')}`)
