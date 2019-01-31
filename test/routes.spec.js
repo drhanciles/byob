@@ -220,7 +220,7 @@ describe('Client Routes', () => {
         .post('/api/')
     }); 
 
-    it('should add a new player when a request is sent to POST "/api/v1/players"', (done) => {
+    it.skip('should add a new player when a request is sent to POST "/api/v1/players"', (done) => {
       chai.request(server)
         .post('/api/v1/players')
         .send({
@@ -244,7 +244,7 @@ describe('Client Routes', () => {
           done();
         })
     })
-    it.skip('should not add a player if missing data is sent to "/api/vq/players",', (done) => {
+    it('should not add a player if missing data is sent to "/api/v1/players",', (done) => {
       chai.request(server)
         .post('/api/v1/players')
         .send({
@@ -263,7 +263,7 @@ describe('Client Routes', () => {
           response.should.have.status(422); 
           response.should.be.json; 
           response.body.should.have.property('error'); 
-          response.body.error.should.equal('You are missing games_played from the expected format'); 
+          response.body.error.should.equal('You\'re missing games_played from the expected format.'); 
           done(); 
         })
     })

@@ -108,13 +108,13 @@ app.delete('/api/v1/players/:id', (request, response) => {
 app.post('/api/v1/players', (request, response) => {
     const { body } = request;
 
-    const parameters = ['name', 'team', 'points_per_game', 'field_goal_percentage', 'three_point_percentage', 'free_throw_percentage', 'rebounds_per_game', 'assists_per_game', 'steals_per_game', 'blocks_per_game']; 
+    const parameters = ['name', 'team', 'games_played', 'points_per_game', 'field_goal_percentage', 'three_point_percentage', 'free_throw_percentage', 'rebounds_per_game', 'assists_per_game', 'steals_per_game', 'blocks_per_game']; 
 
   for (let requiredParameter of parameters) {
     if (!body[requiredParameter]) {
       return response
               .status(422)
-              .json({error: `You're missing ${requiredParameter} from the expected format.`})
+              .json({error: `You\'re missing ${requiredParameter} from the expected format.`})
     }
   }
   database('players').insert(body, 'id')
