@@ -186,6 +186,37 @@ describe('Client Routes', () => {
           done();
         });
       });
-    }); 
+    });
+    describe('DELETE', () => {
+      it('should remove a team when a request to DELETE "/api/v1/teams/:id" has been made', (done) => {
+        chai.request(server)
+          .del('/api/v1/teams/2')
+          .end((error, response) => {
+            response.should.have.status(200)
+            response.should.be.json
+            response.body.should.have.property('id')
+            response.body.id.should.be.a('number')
+            done(); 
+          })
+      })
+      it('should remove a player when a request to DELETE "/api/v1/players/:id" has been made', (done) => {
+        chai.request(server)
+          .del('/api/v1/players/2')
+          .end((error, response) => {
+            response.should.have.status(200)
+            response.should.be.json
+            response.body.should.have.property('id')
+            response.body.id.should.be.a('number')
+            done(); 
+          })
+      })
+    }) 
   }); 
+  describe('POST', () => {
+    it.skip('should add a team when a request is sent to POST "/api/v1/teams"', (done) => {
+      chai.request(server)
+        .post('/api/')
+    })
+  })
+
 }); 
