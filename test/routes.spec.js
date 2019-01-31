@@ -153,6 +153,29 @@ describe('Client Routes', () => {
           .query({ rebounds_per_game: 10 })
           .end((error, response) => {
             response.should.have.status(200);
+            response.should.be.json;
+            response.body.should.be.an('array');
+            response.body.should.have.lengthOf(1);
+            response.body[0].should.have.property('name');
+            response.body[0].name.should.be.a('string');
+            response.body[0].should.have.property('team');
+            response.body[0].team.should.be.a('string');
+            response.body[0].should.have.property('points_per_game');
+            response.body[0].points_per_game.should.be.a('string');
+            response.body[0].should.have.property('field_goal_percentage');
+            response.body[0].field_goal_percentage.should.be.a('string');
+            response.body[0].should.have.property('three_point_percentage');
+            response.body[0].three_point_percentage.should.be.a('string');
+            response.body[0].should.have.property('free_throw_percentage');
+            response.body[0].free_throw_percentage.should.be.a('string');
+            response.body[0].should.have.property('rebounds_per_game');
+            response.body[0].rebounds_per_game.should.be.a('string');
+            response.body[0].should.have.property('assists_per_game');
+            response.body[0].assists_per_game.should.be.a('string');
+            response.body[0].should.have.property('steals_per_game');
+            response.body[0].steals_per_game.should.be.a('string');
+            response.body[0].should.have.property('blocks_per_game');
+            response.body[0].blocks_per_game.should.be.a('string');
             done();
           })
       })
@@ -161,29 +184,29 @@ describe('Client Routes', () => {
         chai.request(server)
           .get('/api/v1/players/2')
           .end((error, response) => {
-            response.should.have.status(200)
-            response.should.be.json
-            response.body.should.be.a('array')
-            response.body[0].should.have.property('name')
-            response.body[0].name.should.be.a('string')
-            response.body[0].should.have.property('team')
-            response.body[0].team.should.be.a('string')
-            response.body[0].should.have.property('points_per_game')
-            response.body[0].points_per_game.should.be.a('string')
-            response.body[0].should.have.property('field_goal_percentage')
-            response.body[0].field_goal_percentage.should.be.a('string')
-            response.body[0].should.have.property('three_point_percentage')
-            response.body[0].three_point_percentage.should.be.a('string')
-            response.body[0].should.have.property('free_throw_percentage')
-            response.body[0].free_throw_percentage.should.be.a('string')
-            response.body[0].should.have.property('rebounds_per_game')
-            response.body[0].rebounds_per_game.should.be.a('string')
-            response.body[0].should.have.property('assists_per_game')
-            response.body[0].assists_per_game.should.be.a('string')
-            response.body[0].should.have.property('steals_per_game')
-            response.body[0].steals_per_game.should.be.a('string')
-            response.body[0].should.have.property('blocks_per_game')
-            response.body[0].blocks_per_game.should.be.a('string')
+            response.should.have.status(200);
+            response.should.be.json;
+            response.body.should.be.a('array');
+            response.body[0].should.have.property('name');
+            response.body[0].name.should.be.a('string');
+            response.body[0].should.have.property('team');
+            response.body[0].team.should.be.a('string');
+            response.body[0].should.have.property('points_per_game');
+            response.body[0].points_per_game.should.be.a('string');
+            response.body[0].should.have.property('field_goal_percentage');
+            response.body[0].field_goal_percentage.should.be.a('string');
+            response.body[0].should.have.property('three_point_percentage');
+            response.body[0].three_point_percentage.should.be.a('string');
+            response.body[0].should.have.property('free_throw_percentage');
+            response.body[0].free_throw_percentage.should.be.a('string');
+            response.body[0].should.have.property('rebounds_per_game');
+            response.body[0].rebounds_per_game.should.be.a('string');
+            response.body[0].should.have.property('assists_per_game');
+            response.body[0].assists_per_game.should.be.a('string');
+            response.body[0].should.have.property('steals_per_game');
+            response.body[0].steals_per_game.should.be.a('string');
+            response.body[0].should.have.property('blocks_per_game');
+            response.body[0].blocks_per_game.should.be.a('string');
             done(); 
       })
     });
@@ -254,7 +277,7 @@ describe('Client Routes', () => {
             response.should.have.status(200);
             response.should.be.html;
             response.res.text.should.be.a('string');
-            response.res.text.should.equal('Team at id 1 updated')
+            response.res.text.should.equal('Team at id 1 updated');
             done();
           })
       })
@@ -281,10 +304,10 @@ describe('Client Routes', () => {
         chai.request(server)
           .del('/api/v1/teams/2')
           .end((error, response) => {
-            response.should.have.status(200)
-            response.should.be.json
-            response.body.should.have.property('id')
-            response.body.id.should.be.a('number')
+            response.should.have.status(200);
+            response.should.be.json;
+            response.body.should.have.property('id');
+            response.body.id.should.be.a('number');
             done(); 
           });
       });
@@ -293,10 +316,10 @@ describe('Client Routes', () => {
         chai.request(server)
           .del('/api/v1/players/2')
           .end((error, response) => {
-            response.should.have.status(200)
-            response.should.be.json
-            response.body.should.have.property('id')
-            response.body.id.should.be.a('number')
+            response.should.have.status(200);
+            response.should.be.json;
+            response.body.should.have.property('id');
+            response.body.id.should.be.a('number');
             done(); 
           });
       });
@@ -369,8 +392,8 @@ describe('Client Routes', () => {
       .end((error, response) => {
         response.should.have.status(200); 
         response.should.be.html; 
-        response.res.text.should.be.a('string')
-        response.res.text.should.equal('Player at id 3 has been updated')
+        response.res.text.should.be.a('string');
+        response.res.text.should.equal('Player at id 3 has been updated');
         done(); 
       })
     })
@@ -386,9 +409,9 @@ describe('Client Routes', () => {
         response.should.have.status(422); 
         response.should.be.html; 
         response.res.text.should.be.a('string'); 
-        response.res.text.should.equal('There is no player at that id')
+        response.res.text.should.equal('There is no player at that id');
         done(); 
-      })
-    })
-  })
+      });
+    });
+  });
 }); 
