@@ -6,10 +6,16 @@ Goals and Expectations for the Project (What does each group member hope to get 
   - Mike's Goals: 
     - deepen knowledge of server-side code by adding testing and getting more practice with express and knex. 
     - get better with creating documentation for projects through README's
+  - Derek's Goals: 
+    - establish a refined workflow for building database, writing test for routes, and then implementing route handlers. 
+    - use the knex docs and chai docs to find solutions 
+    
 
 Team strengths & collaboration styles (consider discussing your Pairin qualities here):
    - Mike:
      - I'm feeling pretty good about the backend code that we've learned thus far. I want to remain in contact and work collaboratively to create the best project that we can in the time we have
+   - Derek:
+    - confident in my understanding on database, and can bring positivity when faced with adversity. 
 
 How we can use our strengths to overcome obstacles:
    - Mike: 
@@ -25,6 +31,8 @@ Communication Expectations (How and often will we communicate? How do we keep li
 Abilities & Growth Expectations (Technical strengths and areas for desired improvement):
   - Mike: 
     - I hope to get a solid understanding of what server-side testing looks like as well as more professional documentation. I am also looking forward to getting a first glace at how Travis CI works
+  - Derek:
+    - Coming out of this with a better understanding of CI and server-side testing as well. Having thorough documentation 
 
 Workload Expectations (What features do we each want to work on?):
   - As of Tuesday, we have divided the server routes evenly between us and are working separately to write the routes and the tests. Tomorrow we will setup and configure our databases together. I plan to take a big chunk of the README documentation. We can divvy up from there depending on time and other commitments. 
