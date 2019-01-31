@@ -131,7 +131,7 @@ app.patch('/api/v1/players/:id', (request, response) => {
       if (playerId) {
         response.status(200).send(`Player at id ${playerId} has been updated`)
       } else {
-        response.status(404).send('There is no player at that id')
+        response.status(422).send('There is no player at that id')
       }
     })
     .catch(error => response.status(500).json({ error }))

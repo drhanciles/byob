@@ -293,7 +293,7 @@ describe('Client Routes', () => {
         three_point_percentage: 35
       })
       .end((error, response) => {
-        response.should.have.status(404); 
+        response.should.have.status(422); 
         response.should.be.html; 
         response.res.text.should.be.a('string'); 
         response.res.text.should.equal('There is no player at that id')
