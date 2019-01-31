@@ -6,7 +6,8 @@ module.exports = [
     owner: 'Tony Ressler',
     most_recent_championship: 1958,
     defensive_rating: 111.3,
-    points_per_game: 109.9 },
+    points_per_game: 109.9 
+  },
   { 
     id: 1,
     team_name: 'Milwaukee Bucks',
