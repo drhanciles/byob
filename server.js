@@ -33,7 +33,6 @@ app.get('/api/v1/teams/:id', (request, response) => {
   const id = parseInt(request.params.id);
   database('teams').where('id', id).select()
     .then(team => {
-      console.log(team)
       if(team.length > 0) {
         response.status(200).json(team);
       } else {
@@ -44,6 +43,16 @@ app.get('/api/v1/teams/:id', (request, response) => {
       response.status(500).json({ error });
     }); 
 });
+
+app.get('/api/v1/players', (request, response) => {
+  database('players').select()
+  .then(players => {
+    response.status(200).json(players);
+  })
+  .catch(error => {
+    response.status(500).json({ error })
+  });
+})
 
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on port ${app.get('port')}`)

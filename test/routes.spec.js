@@ -113,6 +113,37 @@ describe('Client Routes', () => {
             done();
           });
       });
+
+      it('should return an array of players from GET "/api/v1/players" endpoint', (done) => {
+          chai.request(server)
+          .get('/api/v1/players')
+          .end((error, response) => {
+            response.should.have.status(200)
+            response.should.be.json
+            response.body.should.be.a('array')
+            response.body[0].should.have.property('name')
+            response.body[0].name.should.be.a('string')
+            response.body[0].should.have.property('team')
+            response.body[0].team.should.be.a('string')
+            response.body[0].should.have.property('points_per_game')
+            response.body[0].points_per_game.should.be.a('string')
+            response.body[0].should.have.property('field_goal_percentage')
+            response.body[0].field_goal_percentage.should.be.a('string')
+            response.body[0].should.have.property('three_point_percentage')
+            response.body[0].three_point_percentage.should.be.a('string')
+            response.body[0].should.have.property('free_throw_percentage')
+            response.body[0].free_throw_percentage.should.be.a('string')
+            response.body[0].should.have.property('rebounds_per_game')
+            response.body[0].rebounds_per_game.should.be.a('string')
+            response.body[0].should.have.property('assists_per_game')
+            response.body[0].assists_per_game.should.be.a('string')
+            response.body[0].should.have.property('steals_per_game')
+            response.body[0].steals_per_game.should.be.a('string')
+            response.body[0].should.have.property('blocks_per_game')
+            response.body[0].blocks_per_game.should.be.a('string')
+            done(); 
+          })
+      })
     });
   });
 });
