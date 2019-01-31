@@ -69,6 +69,11 @@ app.get('/api/v1/players/:id', (request, response) => {
     });
 })
 
+app.get('/api/v1/players?:key=:value', (request, response) => {
+  database('players').where(request.params.key, request.params.value).select()
+    .then(() => {})
+})
+
 app.delete('/api/v1/teams/:id', (request, response) => {
   const id = parseInt(request.params.id)
   database('teams').where('id', id)

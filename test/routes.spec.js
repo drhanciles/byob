@@ -186,6 +186,8 @@ describe('Client Routes', () => {
           done();
         });
       });
+
+      it('should get a ')
     });
     describe('DELETE', () => {
       it('should remove a team when a request to DELETE "/api/v1/teams/:id" has been made', (done) => {
@@ -218,5 +220,4 @@ describe('Client Routes', () => {
         .post('/api/')
     })
   })
-
 }); 
