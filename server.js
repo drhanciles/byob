@@ -87,6 +87,20 @@ app.post('/api/v1/teams', (request, response) => {
     .catch(error => response.status(500).json({ error }))
 });
 
+app.patch('/api/v1/teams/:id', (request, response) => {
+  const id = parseInt(request.params.id);
+  const { body } = request;
+  database('teams').where('id', id).update(body)
+    .then(teamId => {
+      if (teamId) {
+        response.status(200).send(`Team at id ${teamId} updated`)
+      } else {
+        response.status(404).send('No teams with that id')
+      }
+    })
+    .catch(error => response.status(500).json({ error }))
+});
+
 app.delete('/api/v1/teams/:id', (request, response) => {
   const id = parseInt(request.params.id)
   database('teams').where('id', id)
