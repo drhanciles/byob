@@ -186,9 +186,49 @@ describe('Client Routes', () => {
           done();
         });
       });
-
-      it('should get a ')
     });
+
+    describe('POST', () => {
+      it('should add a team when a request is sent to POST "/api/v1/teams"', (done) => {
+        chai.request(server)
+          .post('/api/v1/teams')
+          .send({
+            team_name: 'Tuscaloosa Finishers',
+            head_coach: 'Bob\'s YourUncle',
+            owner: 'Jack O. Trades',
+            most_recent_championship: 1942,
+            defensive_rating: 15.5,
+            points_per_game: 5
+          })
+          .end((error, response) => {
+            response.should.have.status(201);
+            response.should.be.json;
+            response.body.should.have.property('id');
+            response.body.id.should.be.a('number');
+            done();
+          }) 
+      })
+
+      it.only('should return status 422 if the body of the request is not correct', (done) => {
+        chai.request(server)
+          .post('/api/v1/teams')
+          .send({
+            team_name: 'The Mighty Ducks',
+            owner: 'Tony Ressler',
+            most_recent_championship: 1958,
+            defensive_rating: 111.3,
+            points_per_game: 109.9 
+          })
+          .end((error, response) => {
+            response.should.have.status(422);
+            response.should.be.json;
+            response.body.should.have.property('error');
+            response.body.error.should.equal(`You are missing head_coach from the expected format`);
+            done()
+          });
+      });
+    });
+
     describe('DELETE', () => {
       it('should remove a team when a request to DELETE "/api/v1/teams/:id" has been made', (done) => {
         chai.request(server)
@@ -214,10 +254,4 @@ describe('Client Routes', () => {
       })
     }) 
   }); 
-  describe('POST', () => {
-    it.skip('should add a team when a request is sent to POST "/api/v1/teams"', (done) => {
-      chai.request(server)
-        .post('/api/')
-    })
-  })
 }); 
