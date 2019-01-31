@@ -8,7 +8,6 @@ const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile.js')[environment];
 const database = require('knex')(configuration);
 
-
 app.use(bodyParser.json());
 
 app.set('port', process.env.PORT || 3000);
