@@ -218,6 +218,54 @@ describe('Client Routes', () => {
     it.skip('should add a team when a request is sent to POST "/api/v1/teams"', (done) => {
       chai.request(server)
         .post('/api/')
+    }); 
+
+    it('should add a new player when a request is sent to POST "/api/v1/players"', (done) => {
+      chai.request(server)
+        .post('/api/v1/players')
+        .send({
+          name: "Kobe Bryant", 
+          team: "Los Angeles Lakers", 
+          games_played: 81,
+          points_per_game: 35.6, 
+          field_goal_percentage: 45, 
+          three_point_percentage: 40, 
+          free_throw_percentage: 90,
+          rebounds_per_game: 6.1, 
+          assists_per_game: 2.4, 
+          steals_per_game: 2.2, 
+          blocks_per_game: 1.33
+        })
+        .end((err, response) => {
+          response.should.have.status(201); 
+          response.body.should.be.json;
+          response.body.should.have.property('id'); 
+          response.body.id.should.be.a('number'); 
+          done();
+        })
+    })
+    it.skip('should not add a player if missing data is sent to "/api/vq/players",', (done) => {
+      chai.request(server)
+        .post('/api/v1/players')
+        .send({
+          name: "Kobe Bryant", 
+          team: "Los Angeles Lakers", 
+          points_per_game: 35.6, 
+          field_goal_percentage: 45, 
+          three_point_percentage: 40, 
+          free_throw_percentage: 90,
+          rebounds_per_game: 6.1, 
+          assists_per_game: 2.4, 
+          steals_per_game: 2.2, 
+          blocks_per_game: 1.33
+        })
+        .end((err, response) => {
+          response.should.have.status(422); 
+          response.should.be.json; 
+          response.body.should.have.property('error'); 
+          response.body.error.should.equal('You are missing games_played from the expected format'); 
+          done(); 
+        })
     })
   })
 }); 
