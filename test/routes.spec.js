@@ -174,6 +174,18 @@ describe('Client Routes', () => {
             done(); 
       })
     });
-  });
-  })
-})
+
+    it('should return status 404 with a message from the get "/api/v1/players/:id" if there is no matching id', (done) => {
+      chai.request(server)
+        .get('/api/v1/players/10')
+        .end((error, response) => {
+          response.should.have.status(404);
+          response.should.be.json;
+          response.body.should.have.property('error');
+          response.body.error.should.equal('There are no entries with that id');
+          done();
+        });
+      });
+    }); 
+  }); 
+}); 
