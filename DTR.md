@@ -15,7 +15,7 @@ Team strengths & collaboration styles (consider discussing your Pairin qualities
    - Mike:
      - I'm feeling pretty good about the backend code that we've learned thus far. I want to remain in contact and work collaboratively to create the best project that we can in the time we have
    - Derek:
-    - confident in my understanding on database, and can bring positivity when faced with adversity. 
+      - confident in my understanding on database, and can bring positivity when faced with adversity. 
 
 How we can use our strengths to overcome obstacles:
    - Mike: 
