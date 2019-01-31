@@ -270,9 +270,9 @@ describe('Client Routes', () => {
     })
   })
   describe('PATCH', () => {
-    it.skip('should update the the given property on a player mathing the params in a PATCH request sent to "/api/v1/players/:id"', (done) => {
+    it('should update the given property on a player mathing the params in a PATCH request sent to "/api/v1/players/:id"', (done) => {
       chai.request(server)
-      .patch('/api/v1/players/2')
+      .patch('/api/v1/players/3')
       .send({
         games_played: 53, 
         three_point_percentage: 35
@@ -280,11 +280,12 @@ describe('Client Routes', () => {
       .end((error, response) => {
         response.should.have.status(200); 
         response.should.be.html; 
-        response.should.be.a('string')
-        response.res.text.should.equal('Player at id 2 has been updated')
+        response.res.text.should.be.a('string')
+        response.res.text.should.equal('Player at id 3 has been updated')
         done(); 
       })
     })
+
     it('should return an error if there are no players that match params', (done) => {
       chai.request(server)
       .patch('/api/v1/players/12')

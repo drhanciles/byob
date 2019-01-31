@@ -126,12 +126,12 @@ app.patch('/api/v1/players/:id', (request, response) => {
   const id = parseInt(request.params.id); 
   const { body } = request; 
 
-  database('players').where('id', id).update(body)
+  database('players').where('id', id).update(body, 'id')
     .then(playerId => {
-      if (playerId) {
-        response.status(200).send(`Player at id ${playerId} has been updated`)
+      if (playerId.length > 0) {
+       return response.status(200).send(`Player at id ${playerId} has been updated`)
       } else {
-        response.status(422).send('There is no player at that id')
+       return response.status(422).send('There is no player at that id')
       }
     })
     .catch(error => response.status(500).json({ error }))
