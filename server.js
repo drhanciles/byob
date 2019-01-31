@@ -1,9 +1,6 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const teamData = require('./db/data/mock-team-data');
-const allTeamData = require('./db/data/nba-team-data');
-const allPlayerData = require('./db/data/nba-players-data');
 const environment = process.env.NODE_ENV || 'development'; 
 const configuration = require('./knexfile.js')[environment];
 const database = require('knex')(configuration);
@@ -12,7 +9,6 @@ app.use(bodyParser.json());
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'BYOB';
-app.locals.teamData = teamData;
 
 app.get('/', (request, response) => {
   response.status(200).send('Hello World!');
@@ -68,10 +64,42 @@ app.get('/api/v1/players/:id', (request, response) => {
     });
 })
 
-app.get('/api/v1/players?:key=:value', (request, response) => {
-  database('players').where(request.params.key, request.params.value).select()
-    .then(() => {})
-})
+// app.get('/api/v1/players?:key=:value', (request, response) => {
+//   database('players').where(request.params.key, request.params.value).select()
+//     .then(() => {})
+// })
+
+app.post('/api/v1/teams', (request, response) => {
+  const { body } = request;
+
+  const parameters = ['team_name', 'head_coach', 'owner', 'most_recent_championship', 'defensive_rating', 'points_per_game'];
+
+  for (let requiredParameter of parameters) {
+    if(!body[requiredParameter]) {
+      return response
+        .status(422)
+        .json({ error: `You are missing ${requiredParameter} from the expected format`})
+    }
+  }
+
+  database('teams').insert(body, 'id')
+    .then(body => response.status(201).json({ id: body[0] }))
+    .catch(error => response.status(500).json({ error }))
+});
+
+app.patch('/api/v1/teams/:id', (request, response) => {
+  const id = parseInt(request.params.id);
+  const { body } = request;
+  database('teams').where('id', id).update(body)
+    .then(teamId => {
+      if (teamId) {
+        response.status(200).send(`Team at id ${teamId} updated`)
+      } else {
+        response.status(404).send('No teams with that id')
+      }
+    })
+    .catch(error => response.status(500).json({ error }))
+});
 
 app.delete('/api/v1/teams/:id', (request, response) => {
   const id = parseInt(request.params.id)
