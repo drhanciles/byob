@@ -52,6 +52,21 @@ app.get('/api/v1/players', (request, response) => {
   .catch(error => {
     response.status(500).json({ error })
   });
+}); 
+
+app.get('/api/v1/players/:id', (request, response) => {
+  const id = parseInt(request.params.id);
+  database('players').where('id', id).select()
+    .then(player => {
+      if(player.length > 0) {
+        response.status(200).json(player)
+      } else {
+        response.status(404).json({error: 'There are no entries with that id'});
+      }
+    })
+    .catch(error => {
+      response.status(500).json({ error });
+    });
 })
 
 app.listen(app.get('port'), () => {
