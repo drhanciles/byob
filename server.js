@@ -133,6 +133,38 @@ app.delete('/api/v1/players/:id', (request, response) => {
     })
 })
 
+app.post('/api/v1/players', (request, response) => {
+    const { body } = request;
+
+    const parameters = ['name', 'team', 'games_played', 'points_per_game', 'field_goal_percentage', 'three_point_percentage', 'free_throw_percentage', 'rebounds_per_game', 'assists_per_game', 'steals_per_game', 'blocks_per_game']; 
+
+  for (let requiredParameter of parameters) {
+    if (!body[requiredParameter]) {
+      return response
+              .status(422)
+              .json({error: `You\'re missing ${requiredParameter} from the expected format.`})
+    }
+  }
+  database('players').insert(body, 'id')
+    .then(body => response.status(201).json({ id: body[0] }))
+    .catch(error => response.status(500).json({ error }))
+}); 
+
+app.patch('/api/v1/players/:id', (request, response) => {
+  const id = parseInt(request.params.id); 
+  const { body } = request; 
+
+  database('players').where('id', id).update(body, 'id')
+    .then(playerId => {
+      if (playerId.length > 0) {
+       return response.status(200).send(`Player at id ${playerId} has been updated`)
+      } else {
+       return response.status(422).send('There is no player at that id')
+      }
+    })
+    .catch(error => response.status(500).json({ error }))
+}); 
+
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on port ${app.get('port')}`)
 });
