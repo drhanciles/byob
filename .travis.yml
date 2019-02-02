@@ -1,6 +1,10 @@
 language: node_js
 node_js:
 - node
+script:
+  - npm run lint
+  - npm run build 
+  - npm test 
 services:
 - postgresql
 before_script:
@@ -13,3 +17,4 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: XxTv4EYmoNuoZ6NyPgukdhLhK2xIsLsQtH3unqe7Cyd0e3ByUnigZAym3B+7Y9Usk4MuSPxpqvK4MQE/55lEfQbbG28jLQWh2jBBctQPj2F1GwRs7AxtcaS/AdJbsrci6fUKZ7onNp2BjwdRYtuNdj9Hd8RCgV0+pld7pMdPCrOysQzLP8x4OZxWvrKibnJFWBV73JPc9yQG9dKDskEKwXT4/TFCjnuY6mWbJcIXgKKsZL3KlOvc2TocKt+E3vy9GA9kNwpX5u/YEMAETrFmj+SumqL9xdlpEM/o3jOnamIH8UIEbP5Bpjk+aKr+CQnoNWno5HbnK3wuQZjQKImiugPqjHSrEmVIzLlS5yNEzVJFiNG/zBYyz0qj12iG3P8KZeb1f3SXknHAdRpvMkyUnoP0rZLB0SPC03buAb4mEEq6zNu472qubLebhzSMewrP4usZX5QK4BBoVMeoqK0O5oSy/AuIExKEXnmg4lHhxzZmshJzmQi19NO4NQ1RYrvE2Gi07bpsYRkuYoskwAN36q6hvYtkOxu2+A3sAWWdOAz7KkPGjQvF9S04eDBNOu5GzxPwEbc7j+RVTqL3mAA3UTRDBauFD4YD4MOt9X/x1xxwg4j19yM+RuakR0an4T60SKuvqU7ZW3mut/xBAuwhpx19bswZG+vPaccOTqAt3d8=
+
