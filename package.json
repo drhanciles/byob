@@ -26,7 +26,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "knex": "^0.16.3"
+    "knex": "^0.16.3",
+    "pg": "^7.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -37,7 +38,6 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-react": "^7.12.4",
-    "mocha": "^5.2.0",
-    "pg": "^7.8.0"
+    "mocha": "^5.2.0"
   }
 }
