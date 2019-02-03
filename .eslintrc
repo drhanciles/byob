@@ -5,6 +5,12 @@
   },
   
   "extends": "airbnb",
-  
+  "rules": {
+    "import/order": 1,
+    "consistent-return": 1,
+    "no-restricted-syntax": 1,
+    "no-else-return": 1
+  },
+
   "parser": "babel-eslint"
 }

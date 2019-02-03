@@ -1,40 +1,37 @@
-// Update with your config settings.
-
 module.exports = {
-
   development: {
     client: 'pg',
     connection: 'postgres://localhost/byob',
     migrations: {
-      directory: './db/migrations'
+      directory: './db/migrations',
     },
     seeds: {
-      directory: './db/seeds/dev'
+      directory: './db/seeds/dev',
     },
-    useDefaultAsNull: true
+    useDefaultAsNull: true,
   },
 
   test: {
-    client: 'pg', 
-    connection: 'postgres://localhost/test_byob', 
+    client: 'pg',
+    connection: 'postgres://localhost/test_byob',
     migrations: {
-      directory: './db/migrations'
-    }, 
+      directory: './db/migrations',
+    },
     seeds: {
-      directory: './db/seeds/test'
-    }, 
-    useDefaultAsNull: true
-  }, 
+      directory: './db/seeds/test',
+    },
+    useDefaultAsNull: true,
+  },
 
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL + `?ssl=true`,
+    connection: `${process.env.DATABASE_URL}?ssl=true`,
     migrations: {
-      directory: './db/migrations'
-    }, 
+      directory: './db/migrations',
+    },
     seeds: {
-      directory: './db/seeds/dev'
-    }, 
-    useDefaultAsNull: true
+      directory: './db/seeds/dev',
+    },
+    useDefaultAsNull: true,
   },
 };
