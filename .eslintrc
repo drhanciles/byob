@@ -6,10 +6,10 @@
   
   "extends": "airbnb",
   "rules": {
-    "import/order": 1,
-    "consistent-return": 1,
-    "no-restricted-syntax": 1,
-    "no-else-return": 1
+    "import/order": 0,
+    "consistent-return": 0,
+    "no-restricted-syntax": 0,
+    "no-else-return": 0
   },
 
   "parser": "babel-eslint"

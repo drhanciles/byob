@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile.js')[environment];
-
 const database = require('knex')(configuration);
 
 app.use(bodyParser.json());
@@ -149,15 +148,12 @@ app.patch('/api/v1/players/:id', (request, response) => {
     .then((playerId) => {
       if (playerId.length > 0) {
         return response.status(200).send(`Player at id ${playerId} has been updated`);
-      } else {
-        return response.status(422).send('There is no player at that id');
       }
+      return response.status(422).send('There is no player at that id');
     })
     .catch(error => response.status(500).json({ error }));
 });
 
-app.listen(app.get('port'), () => {
-  console.log(`${app.locals.title} is running on port ${app.get('port')}`);
-});
+app.listen(app.get('port'), () => `${app.locals.title} is running on port ${app.get('port')}`);
 
 module.exports = app;
