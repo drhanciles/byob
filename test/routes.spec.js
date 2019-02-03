@@ -309,7 +309,7 @@ describe('Client Routes', () => {
             response.should.have.status(422); 
             response.should.be.json; 
             response.body.should.have.property('error'); 
-            response.body.error.should.equal('You\'re missing games_played from the expected format.'); 
+            response.body.error.should.equal('You are missing games_played from the expected format.'); 
             done(); 
           })
       })
@@ -358,7 +358,7 @@ describe('Client Routes', () => {
           response.should.have.status(422); 
           response.should.be.json; 
           response.body.should.have.property('error'); 
-          response.body.error.should.equal('You\'re missing games_played from the expected format.'); 
+          response.body.error.should.equal('You are missing games_played from the expected format.'); 
           done(); 
         })
     })
