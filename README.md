@@ -1,6 +1,67 @@
 # Fantasy Basketball API
 This API was designed to allow users to get the top 3 scorers from each NBA team to aid in decisions on which fantasy players they would like to select. The API also stores relevant team data to throughly understand the stats of the players team in relation to their stats. 
 
+# Contribution Setup Instructions: 
+The following is a Node.js server. Ensure that Node is installed on your machine. 
+
+#### Clone Repository Locally: 
+```
+git clone https://github.com/Dhanciles/byob.git
+```
+#### Navigate to the Recently Cloned Repository
+```
+cd byob
+```
+#### Install Dependecies
+```
+npm install
+```
+#### Ensure the Following Dependencies Have Been Installed
+```
+- Express
+- Knex
+- Postgres
+- Body Parser
+- Mocha
+- Chai 
+- Chai-HTTP
+- Eslint(airbnb plug in and all related dependencies)
+```
+#### Create Database
+```
+$ psql
+CREATE DATABASE <name of your database>
+```
+#### Run Migrations
+```
+knex migrate:latest
+```
+#### Run Seeds
+```
+knex seed:run
+```
+
+#### Create Test Database
+```
+$ psql
+CREATE DATABASE <name of your test database>
+```
+#### Run Migrations
+```
+knex migrate:latest
+```
+#### Run Seeds
+```
+knex seed:run
+```
+
+#### Run Test
+```
+npm test
+```
+
+# API Documentation
+
 ## GET all teams:
 ```
 GET /api/v1/teams
