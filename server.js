@@ -6,8 +6,10 @@ const bodyParser = require('body-parser');
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile.js')[environment];
 const database = require('knex')(configuration);
+const cors = require('cors');
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'BYOB';
